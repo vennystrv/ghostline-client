@@ -5,10 +5,12 @@ body {
     color: #cdccd5; /* Default text color */
     line-height: 1.6;
     overflow-x: hidden;
+    overflow-y: auto; /* Allow vertical scrolling if content exceeds viewport, but min-height should prevent it */
     display: flex; /* Center content */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
     min-height: 100vh; /* Full viewport height */
+    padding-bottom: 60px; /* Add padding to the bottom to make space for the fixed footer */
 }
 
 .login-logo {
@@ -50,6 +52,7 @@ body {
     width: 100%;
     max-width: 400px; /* Max width for the login box */
     padding: 20px;
+    margin: 40px auto; /* Add top and bottom margin and center horizontally */
 }
 
 .login-box {
@@ -114,14 +117,21 @@ body {
     right: 0;
     width: 100%;
     background: #000; /* Ensure background is black */
-    padding: 20px; /* Add some padding */
-    text-align: right; /* Align all content to the right */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+.footer .container {
+    max-width: 100%; /* Allow container to take full width */
+    margin: 0; /* Remove auto margins */
+    padding: 0; /* Remove padding from this container if any */
 }
 
 .footer-bottom {
     display: flex;
     justify-content: space-between; /* Put space between copyright and links */
     align-items: center; /* Vertically center items */
+    padding: 20px 0; /* Add vertical padding */
+    width: 100%; /* Ensure footer-bottom takes full width of its container */
 }
 
 .footer-bottom div {
