@@ -130,7 +130,7 @@ body {
     display: flex;
     justify-content: space-between; /* Put space between copyright and links */
     align-items: center; /* Vertically center items */
-    padding: 20px 10px; /* Add vertical padding and a small horizontal padding */
+    padding: 20px 310px; /* Further increase right padding to move links more left */
 }
 
 .footer-bottom div {
