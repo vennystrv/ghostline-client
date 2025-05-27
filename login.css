@@ -109,4 +109,18 @@ body {
 /* Footer Styles for Login Page */
 .footer-bottom .footer-links a {
     color: white;
-} 
+}
+
+/* Footer */
+<footer class="footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <div style="color: white;">Copyright © 2025 Ghostline.</div>
+            <div class="footer-links">
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer> 
