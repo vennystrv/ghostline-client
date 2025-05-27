@@ -272,13 +272,12 @@ html {
 }
 
 .plan-card {
-    background: rgba(30, 22, 53, 0.5);
+    background: #000000;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 2rem;
     text-align: center;
     transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
 }
 
 .plan-card:hover {
@@ -343,7 +342,7 @@ html {
 }
 
 .check {
-    color: #4ade80;
+    color: #fff;
     margin-right: 0.5rem;
     font-weight: bold;
 }
@@ -523,6 +522,16 @@ html {
     align-items: center;
     color: #888;
     font-size: 0.9rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #cdccd5;
 }
 
 /* Animations */
