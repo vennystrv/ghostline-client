@@ -29,6 +29,7 @@ body {
 .login-logo .logo-text {
     font-size: 1.5rem; /* Increase size */
     color: #fff !important;
+    font-weight: bold;
 }
 
 .login-container {
