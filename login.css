@@ -104,4 +104,9 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 0 16px rgba(255, 255, 255, 0.4),
                 0 0 24px rgba(255, 255, 255, 0.3);
+}
+
+/* Footer Styles for Login Page */
+.footer-bottom .footer-links a {
+    color: white;
 } 
