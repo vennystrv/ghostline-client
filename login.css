@@ -16,6 +16,9 @@ body {
     top: 20px; /* Adjust as needed for spacing from top */
     left: 20px; /* Adjust as needed for spacing from left */
     z-index: 10;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 .login-logo .logo-img {
@@ -26,7 +29,6 @@ body {
 .login-logo .logo-text {
     font-size: 1.5rem; /* Increase size */
     color: #fff !important;
-    text-shadow: 0 0 16px #fff, 0 0 32px #fff;
 }
 
 .login-container {
