@@ -128,15 +128,20 @@ body {
 
 .footer-bottom {
     display: flex;
-    justify-content: space-between; /* Put space between copyright and links */
+    justify-content: flex-start; /* Align content to the left */
     align-items: center; /* Vertically center items */
-    padding: 20px 0; /* Add vertical padding */
+    padding: 20px 20px; /* Add vertical and horizontal padding */
     width: 100%; /* Ensure footer-bottom takes full width of its container */
 }
 
 .footer-bottom div {
     color: white; /* Ensure copyright text is white */
-    /* Remove margin-right: 15px; as space-between handles spacing */
+    /* Remove margin-right: 15px; as space-between handled spacing */
+    margin-right: auto; /* Push the links to the right */
+}
+
+.footer-bottom .footer-links {
+    display: flex; /* Make the links container a flex container */
 }
 
 .footer-bottom .footer-links a {
