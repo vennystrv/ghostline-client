@@ -11,6 +11,22 @@ body {
     min-height: 100vh; /* Full viewport height */
 }
 
+.login-logo {
+    position: absolute;
+    top: 20px; /* Adjust as needed for spacing from top */
+    left: 20px; /* Adjust as needed for spacing from left */
+    z-index: 10;
+}
+
+.login-logo .logo-img {
+    width: 48px; /* Increase size */
+    height: 48px; /* Increase size */
+}
+
+.login-logo .logo-text {
+    font-size: 1.5rem; /* Increase size */
+}
+
 .login-container {
     width: 100%;
     max-width: 400px; /* Max width for the login box */
