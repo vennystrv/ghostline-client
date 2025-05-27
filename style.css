@@ -7,11 +7,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-image: url('https://i.pinimg.com/originals/0e/6b/da/0e6bdaad458721ecf7eb50e0254849bc.gif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: #000000;
     color: #cdccd5;
     line-height: 1.6;
     overflow-x: hidden;
