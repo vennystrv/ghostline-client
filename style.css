@@ -11,10 +11,6 @@ body {
     color: #cdccd5;
     line-height: 1.6;
     overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
 html {
@@ -68,7 +64,7 @@ html {
 
 .logo:hover .logo-img {
     transform: scale(1.1) rotate(5deg);
-    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.5));
+    filter: drop_shadow(0 0 12px rgba(255, 255, 255, 0.5));
 }
 
 .logo-text {
@@ -116,7 +112,7 @@ html {
 
 .buy-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 16px 4px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 24px 6px #fff;
     border-color: #fff;
 }
 
@@ -151,17 +147,15 @@ html {
 .hero-title {
     font-size: 5rem;
     font-weight: 700;
-    color: #fff !important;
-    text-shadow: 0 0 15px rgba(64, 64, 64, 0.8),
-                 0 0 30px rgba(64, 64, 64, 0.6),
-                 0 0 45px rgba(64, 64, 64, 0.4),
-                 0 0 60px rgba(64, 64, 64, 0.2);
+    color: transparent !important;
+    background: linear-gradient(90deg, #fff 0%, #ccc 15%, #666 65%, #222 100%) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
     margin-bottom: 1rem;
     animation: slideUp 1s ease-out;
+    text-shadow: 0 0 1px #fff;
     filter: none !important;
-    background: none !important;
-    -webkit-background-clip: initial !important;
-    -webkit-text-fill-color: initial !important;
 }
 
 .hero-subtitle {
@@ -278,21 +272,19 @@ html {
 }
 
 .plan-card {
-    background: #000;
-    border: none;
+    background: rgba(30, 22, 53, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 2rem;
     text-align: center;
     transition: all 0.3s ease;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2),
-                0 0 16px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
 }
 
 .plan-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.4),
-                0 0 24px rgba(255, 255, 255, 0.3),
-                0 0 36px rgba(255, 255, 255, 0.2);
+    border-color: #ffffff;
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
 }
 
 .plan-header {
@@ -334,7 +326,7 @@ html {
 
 .plan-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 16px 4px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 24px 6px #fff;
     border-color: #fff;
 }
 
@@ -351,7 +343,7 @@ html {
 }
 
 .check {
-    color: #fff;
+    color: #4ade80;
     margin-right: 0.5rem;
     font-weight: bold;
 }
@@ -411,11 +403,6 @@ html {
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
     padding: 2rem 1.5rem 1.5rem;
     color: white;
-}
-
-.gallery-overlay h4 {
-    font-size: 1.1rem;
-    font-weight: 600;
 }
 
 .video .gallery-overlay {
@@ -515,13 +502,13 @@ html {
     width: 28px;
     height: 28px;
     margin-right: 10px;
-    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.2));
+    filter: drop_shadow(0 0 6px rgba(255, 255, 255, 0.2));
     transition: all 0.3s ease;
 }
 
 .footer-logo:hover .footer-logo-img {
     transform: scale(1.1);
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
+    filter: drop_shadow(0 0 10px rgba(255, 255, 255, 0.4));
 }
 
 .footer-logo:hover .logo-text {
@@ -536,22 +523,6 @@ html {
     align-items: center;
     color: #888;
     font-size: 0.9rem;
-}
-
-.footer-links {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.footer-links a {
-    color: #888;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #fff;
 }
 
 /* Animations */
@@ -618,64 +589,3 @@ html {
         gap: 1rem;
         text-align: center;
     }
-
-/* Login Page Styles */
-.login-container {
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-}
-
-.login-box {
-    background: #000;
-    border-radius: 12px;
-    padding: 30px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
-                0 0 20px rgba(255, 255, 255, 0.2),
-                0 0 30px rgba(255, 255, 255, 0.1);
-    color: #fff;
-}
-
-.login-box h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.login-box form label {
-    display: block;
-    text-align: left;
-    margin-bottom: 8px;
-    color: #cdccd5;
-}
-
-.login-box form input[type="text"],
-.login-box form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: #1a1a1a;
-    color: #fff;
-    box-sizing: border-box;
-}
-
-.login-box form button[type="submit"] {
-    background: #000;
-    color: #fff;
-    border: 2px solid #fff;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    padding: 12px 24px;
-    border-radius: 999px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.login-box form button[type="submit"]:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 16px rgba(255, 255, 255, 0.4),
-                0 0 24px rgba(255, 255, 255, 0.3);
-}
