@@ -117,7 +117,7 @@ body {
     right: 0;
     width: 100%;
     background: #000; /* Ensure background is black */
-    padding: 0 20px; /* Add horizontal padding */
+    padding: 0 50px; /* Increase horizontal padding further */
 }
 
 .footer .container {
@@ -130,13 +130,12 @@ body {
     display: flex;
     justify-content: space-between; /* Put space between copyright and links */
     align-items: center; /* Vertically center items */
-    padding: 20px 40px; /* Increase horizontal padding */
-    width: 100%; /* Ensure footer-bottom takes full width of its container */
+    padding: 20px 10px; /* Add vertical padding and a small horizontal padding */
 }
 
 .footer-bottom div {
     color: white; /* Ensure copyright text is white */
-    margin-right: 0; /* Remove auto margin */
+    margin-right: 0; /* Remove any conflicting right margin */
 }
 
 .footer-bottom .footer-links {
@@ -145,7 +144,7 @@ body {
 
 .footer-bottom .footer-links a {
     color: white;
-    margin-left: 15px; /* Add space between links */
+    margin-left: 8px; /* Further reduce space between links */
     text-decoration: none; /* Remove underline */
 }
 
