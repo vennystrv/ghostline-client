@@ -5,7 +5,7 @@ body {
     color: #cdccd5; /* Default text color */
     line-height: 1.6;
     overflow-x: hidden;
-    overflow-y: auto; /* Allow vertical scrolling if content exceeds viewport, but min-height should prevent it */
+    overflow-y: hidden; /* Prevent vertical scrolling */
     display: flex; /* Center content */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
@@ -128,16 +128,15 @@ body {
 
 .footer-bottom {
     display: flex;
-    justify-content: flex-start; /* Align content to the left */
+    justify-content: space-between; /* Put space between copyright and links */
     align-items: center; /* Vertically center items */
-    padding: 20px 20px; /* Add vertical and horizontal padding */
+    padding: 20px 40px; /* Increase horizontal padding */
     width: 100%; /* Ensure footer-bottom takes full width of its container */
 }
 
 .footer-bottom div {
     color: white; /* Ensure copyright text is white */
-    /* Remove margin-right: 15px; as space-between handled spacing */
-    margin-right: auto; /* Push the links to the right */
+    margin-right: 0; /* Remove auto margin */
 }
 
 .footer-bottom .footer-links {
