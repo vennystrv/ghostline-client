@@ -30,6 +30,20 @@ body {
     font-size: 1.5rem; /* Increase size */
     color: #fff !important;
     font-weight: bold;
+    transition: text-shadow 0.3s ease; /* Add transition for glow */
+}
+
+.login-logo:hover .logo-img {
+    transform: scale(1.1) rotate(5deg); /* Match main page logo hover */
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.5)); /* Match main page logo hover */
+}
+
+.login-logo:hover .logo-text {
+    color: #fff !important; /* Match main page logo hover */
+    text-shadow: 0 0 16px #fff, 0 0 32px #fff; /* Match main page logo hover */
+    background: none; /* Match main page logo hover */
+    -webkit-background-clip: initial; /* Match main page logo hover */
+    -webkit-text-fill-color: initial; /* Match main page logo hover */
 }
 
 .login-container {
