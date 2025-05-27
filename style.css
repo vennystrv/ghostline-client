@@ -11,9 +11,6 @@ body {
     color: #cdccd5;
     line-height: 1.6;
     overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
 }
 
