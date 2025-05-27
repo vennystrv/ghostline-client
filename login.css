@@ -106,21 +106,35 @@ body {
                 0 0 24px rgba(255, 255, 255, 0.3);
 }
 
-/* Footer Styles for Login Page */
-.footer-bottom .footer-links a {
-    color: white;
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #000; /* Ensure background is black */
+    padding: 20px; /* Add some padding */
+    text-align: right; /* Align all content to the right */
 }
 
-/* Footer */
-<footer class="footer">
-    <div class="container">
-        <div class="footer-bottom">
-            <div style="color: white;">Copyright © 2025 Ghostline.</div>
-            <div class="footer-links">
-                <a href="#">Contact</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-            </div>
-        </div>
-    </div>
-</footer> 
+.footer-bottom {
+    display: flex;
+    justify-content: space-between; /* Put space between copyright and links */
+    align-items: center; /* Vertically center items */
+}
+
+.footer-bottom div {
+    color: white; /* Ensure copyright text is white */
+    /* Remove margin-right: 15px; as space-between handles spacing */
+}
+
+.footer-bottom .footer-links a {
+    color: white;
+    margin-left: 15px; /* Add space between links */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-bottom .footer-links a:hover {
+    text-decoration: underline; /* Add underline on hover */
+} 
