@@ -1,0 +1,72 @@
+/* Login Page Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #000000; /* Dark black background */
+    color: #cdccd5; /* Default text color */
+    line-height: 1.6;
+    overflow-x: hidden;
+    display: flex; /* Center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Full viewport height */
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px; /* Max width for the login box */
+    padding: 20px;
+}
+
+.login-box {
+    background: #000; /* Black background for the box */
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+                0 0 20px rgba(255, 255, 255, 0.2),
+                0 0 30px rgba(255, 255, 255, 0.1);
+    color: #fff; /* White text inside the box */
+}
+
+.login-box h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff; /* White title */
+}
+
+.login-box form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #cdccd5; /* Label color */
+}
+
+.login-box form input[type="text"],
+.login-box form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #1a1a1a; /* Darker background for inputs */
+    color: #fff; /* White text in inputs */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.login-box form button[type="submit"] {
+    background: #000; /* Black button background */
+    color: #fff; /* White button text */
+    border: 2px solid #fff; /* White border */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* White glow */
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-box form button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.4),
+                0 0 24px rgba(255, 255, 255, 0.3);
+} 
