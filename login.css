@@ -117,35 +117,50 @@ body {
     right: 0;
     width: 100%;
     background: #000; /* Ensure background is black */
-    padding: 0 50px; /* Increase horizontal padding further */
+    padding: 0 20px; /* Padding from screen edges */
+    box-sizing: border-box; /* Include padding in width */
 }
 
 .footer .container {
-    max-width: 100%; /* Allow container to take full width */
-    margin: 0; /* Remove auto margins */
-    padding: 0; /* Remove padding from this container if any */
+    /* This container might not be needed with fixed positioning on footer */
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-bottom {
     display: flex;
     justify-content: space-between; /* Put space between copyright and links */
     align-items: center; /* Vertically center items */
-    padding: 20px 310px; /* Further increase right padding to move links more left */
+    padding: 20px 0; /* Vertical padding */
+    width: 100%; /* Ensure it takes full width within the footer's padding */
+    box-sizing: border-box; /* Include padding in width */
+    flex-wrap: wrap; /* Allow content to wrap if necessary */
 }
 
 .footer-bottom div {
     color: white; /* Ensure copyright text is white */
-    margin-right: 0; /* Remove any conflicting right margin */
+    margin-right: 20px; /* Add some space between copyright and links */
+    flex-shrink: 0; /* Prevent copyright from shrinking */
 }
 
 .footer-bottom .footer-links {
     display: flex; /* Make the links container a flex container */
+    flex-shrink: 1; /* Allow links container to shrink */
+    flex-wrap: wrap; /* Allow links to wrap if necessary */
+    justify-content: flex-end; /* Align links to the right within their container */
+    align-items: center; /* Vertically center links within their container */
 }
 
 .footer-bottom .footer-links a {
     color: white;
-    margin-left: 8px; /* Further reduce space between links */
+    margin-left: 8px; /* Space between links */
     text-decoration: none; /* Remove underline */
+    font-size: 0.9rem; /* Reduced font size */
+}
+
+.footer-bottom .footer-links a:last-child {
+    margin-right: 0; /* Remove right margin on the last link */
 }
 
 .footer-bottom .footer-links a:hover {
