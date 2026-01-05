@@ -285,48 +285,48 @@ html {
     display: flex;
     flex-direction: column;
     text-align: left;
-    border: 2px solid rgba(75, 57, 179, 0.5);
-    box-shadow: 0 0 20px rgba(75, 57, 179, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 .plan-card.monthly {
-    border-color: rgba(75, 57, 179, 0.5);
-    box-shadow: 0 0 20px rgba(75, 57, 179, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 .plan-card.monthly:hover {
     transform: translateY(-5px);
-    border-color: rgba(75, 57, 179, 0.8);
-    box-shadow: 0 0 30px rgba(75, 57, 179, 0.5);
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
 }
 
 .plan-card.lifetime {
-    border-color: rgba(75, 57, 179, 0.5);
-    box-shadow: 0 0 20px rgba(75, 57, 179, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 .plan-card.lifetime:hover {
     transform: translateY(-5px);
-    border-color: rgba(75, 57, 179, 0.8);
-    box-shadow: 0 0 30px rgba(75, 57, 179, 0.5);
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
 }
 
 .plan-card.beta {
-    border-color: rgba(75, 57, 179, 0.5);
-    box-shadow: 0 0 20px rgba(75, 57, 179, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 .plan-card.beta:hover {
     transform: translateY(-5px);
-    border-color: rgba(75, 57, 179, 0.8);
-    box-shadow: 0 0 30px rgba(75, 57, 179, 0.5);
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
 }
 
 .popular-badge {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: rgba(75, 57, 179, 0.9);
+    background: #000;
     color: #fff;
     padding: 0.4rem 0.8rem;
     border-radius: 20px;
@@ -398,17 +398,17 @@ html {
     cursor: pointer;
     transition: all 0.3s ease;
     border: 2px solid #fff;
-    background: rgba(75, 57, 179, 0.8);
+    background: #000;
     color: #fff;
     margin-top: auto;
-    box-shadow: 0 0 12px 2px #fff, inset 0 0 8px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 12px 2px #fff;
 }
 
 .plan-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 24px 6px #fff, inset 0 0 12px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 24px 6px #fff;
     border-color: #fff;
-    background: rgba(75, 57, 179, 0.9);
+    background: #000;
 }
 
 .bullet {
