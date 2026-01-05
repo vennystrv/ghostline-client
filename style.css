@@ -398,28 +398,17 @@ html {
     cursor: pointer;
     transition: all 0.3s ease;
     border: 2px solid #fff;
-    background: #000;
+    background: rgba(75, 57, 179, 0.8);
     color: #fff;
     margin-top: auto;
-    box-shadow: 0 0 12px 2px #fff;
+    box-shadow: 0 0 12px 2px #fff, inset 0 0 8px rgba(255, 255, 255, 0.3);
 }
 
-.monthly-btn:hover {
+.plan-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 24px 6px #fff;
+    box-shadow: 0 0 24px 6px #fff, inset 0 0 12px rgba(255, 255, 255, 0.4);
     border-color: #fff;
-}
-
-.lifetime-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 24px 6px #fff;
-    border-color: #fff;
-}
-
-.beta-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 24px 6px #fff;
-    border-color: #fff;
+    background: rgba(75, 57, 179, 0.9);
 }
 
 .bullet {
