@@ -277,7 +277,7 @@ html {
 }
 
 .plan-card {
-    background: rgba(20, 20, 30, 0.6);
+    background: #000000;
     border-radius: 16px;
     padding: 2rem;
     position: relative;
