@@ -92,11 +92,12 @@ body {
 }
 
 .login-box form button[type="submit"] {
+    width: 120px;
     background: #000; /* Black button background */
     color: #fff; /* White button text */
     border: 2px solid #fff; /* White border */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* White glow */
-    padding: 12px 24px;
+    padding: 12px 20px;
     border-radius: 999px;
     font-weight: 500;
     cursor: pointer;
@@ -112,11 +113,12 @@ body {
 
 .signup-btn {
     display: inline-block;
+    width: 120px;
     background: #000;
     color: #fff;
     border: 2px solid #fff;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    padding: 12px 24px;
+    padding: 12px 20px;
     border-radius: 999px;
     font-weight: 500;
     cursor: pointer;
@@ -124,6 +126,7 @@ body {
     text-decoration: none;
     margin-top: 15px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .signup-btn:hover {
