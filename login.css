@@ -44,6 +44,7 @@ body {
     color: #fff !important; /* Match main page logo hover */
     text-shadow: 0 0 16px #fff, 0 0 32px #fff; /* Match main page logo hover */
     background: none; /* Match main page logo hover */
+    background-clip: initial; /* Match main page logo hover */
     -webkit-background-clip: initial; /* Match main page logo hover */
     -webkit-text-fill-color: initial; /* Match main page logo hover */
 }
@@ -80,7 +81,8 @@ body {
 }
 
 .login-box form input[type="text"],
-.login-box form input[type="password"] {
+.login-box form input[type="password"],
+.login-box form input[type="email"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
