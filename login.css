@@ -92,7 +92,6 @@ body {
 }
 
 .login-box form button[type="submit"] {
-    width: 100%;
     background: #000; /* Black button background */
     color: #fff; /* White button text */
     border: 2px solid #fff; /* White border */
@@ -112,8 +111,7 @@ body {
 }
 
 .signup-btn {
-    display: block;
-    width: 100%;
+    display: inline-block;
     background: #000;
     color: #fff;
     border: 2px solid #fff;
@@ -121,13 +119,11 @@ body {
     padding: 12px 24px;
     border-radius: 999px;
     font-weight: 500;
-    font-size: inherit;
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
     margin-top: 15px;
     box-sizing: border-box;
-    text-align: center;
 }
 
 .signup-btn:hover {
